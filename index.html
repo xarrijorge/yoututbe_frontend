@@ -4,16 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <title>Youtube Vidoe Page</title>
 
     <!-- Custome Styles -->
+    <style>
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body *{
+  margin: 0;
+  padding: 0;
+}
+iframe{
+  min-height: 40vh;
+  min-width: 40vw;
+  height: 70%;
+  width: 70%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  background: #fffdff;
+  box-shadow: 3px 2px 3px grey;
+  
+}
+.fas, .fab{
+  font-size: 2em;
+}
+.right-action-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  width: 20%;
+}
+main{
+  display: flex;
+  margin: 5%;
+  width: 100vw;
+  height: 100vh;
+}
+aside{
+width: 30%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: start;
+padding-right: 5%;
+}
 
-
+    </style>
 
 </head>
 <body>
+  <nav>
+    <i class="fas fa-bars"></i>
+    <i class="fab fa-youtube"></i> 
+    <section class="right-action-buttons">
+      <i class="fas fa-video"></i> 
+      <i class="fas fa-th"></i> 
+      <i class="fas fa-comment-dots"></i> 
+      <i class="fas fa-bell"></i> 
+      <img src="#" class="user_dp">
+    </section>
+  </nav>
+  <main>
+    <iframe src="https://www.youtube.com/embed/uVbTktRKW64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <aside>
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+    <img src="#" alt="image displaying similar videos">
+  </aside>
 
-    
+  </main>
+      
 
     <!-- Custom JS -->
 
