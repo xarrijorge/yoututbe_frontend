@@ -164,3 +164,37 @@ font-size:1vw; margin-bottom: 5px; }
 
 .autoplay ul {list-style: none; display: flex; flex-direction: row; justify-content: space-between;}
 
+.comment-stats-section{
+  
+  /* border: solid 1px; */
+
+}
+
+.video-stats{
+  /* min-height: 40vh;
+  min-width: 40vw;
+  height: 60%;
+  width: 60%; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom:solid 1px;
+  border-top:solid 1px;
+}
+
+.video-author{
+  display: flex;
+  border-bottom:solid 1px;
+}
+
+.video-comments{
+  border-bottom:solid 1px;
+}
+.video-comments .video-comments-form{
+  display: flex;
+  /* border:solid 1px; */
+}
+.video-comments textarea{
+  width: 100%;
+  border-style: none;
+  border-bottom: solid 1px  #909090;;
+}
