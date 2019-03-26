@@ -14,6 +14,7 @@ body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body *{
   margin: 0;
@@ -41,7 +42,7 @@ nav{
 .right-action-buttons{
   display: flex;
   justify-content: space-evenly;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 20%;
 }
 main{
@@ -59,6 +60,43 @@ justify-content: start;
 padding-right: 5%;
 }
 
+.thumbnails {
+    display:flex;
+    /* border:solid 1px; */
+    width:25vw;
+    height:12vh;
+}
+
+.thumbnails img{
+    min-width: 100%;
+}
+
+.inner-left img {
+
+}
+.inner-left{
+    /* width: 169px;
+    height: 95px; */
+    /* border: solid 1px; */
+    margin-right:5px;
+}
+.inner-right{
+     width: 100%;
+  /*  height: 90px; */
+    /* border: solid 1px; */
+    color: rgba(155, 154, 154, 0.877);
+    padding: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.inner-right ul {list-style: none; color: rgba(155, 154, 154, 0.877);}
+.inner-right a { text-decoration: none; color: rgba(31, 30, 30, 0.877);}
+.sidebar-upnext {
+    border-bottom: solid 1px rgb(235, 229, 229);
+    margin-bottom: 9px;
+}
+.autoplay { color: rgba(39, 38, 38, 0.877); font-size:0.8vw; margin-bottom: 5px; }
+.autoplay ul {list-style: none; display: flex; flex-direction: row; justify-content: space-between;}
     </style>
 
 </head>
@@ -71,28 +109,180 @@ padding-right: 5%;
       <i class="fas fa-th"></i> 
       <i class="fas fa-comment-dots"></i> 
       <i class="fas fa-bell"></i> 
-      <img src="#" class="user_dp">
+      <img src="images/user_img.JPG" class="user_dp">
     </section>
   </nav>
   <main>
     <iframe src="https://www.youtube.com/embed/uVbTktRKW64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <aside>
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
-    <img src="#" alt="image displaying similar videos">
+
+        <!-- Upnext Video Section -->
+        <section class="sidebar-upnext"> 
+                <section class="autoplay">
+                        <ul>
+                                <li><h3>Up Next</h3></li>
+                                <li>AUTOPLAY <span class="fa fa-toggle-on"> </span></li>
+                        </ul>
+                  </section> 
+                  <section class="upnext-video thumbnails">
+                        <section class="inner-left">
+                                <a href="#link-to-video-1"><img src="images/thumbnails/thmb-2.JPG" alt=""></a> 
+                         </section>
+                         <section class="inner-right">
+                             <a href="#link-to-video-1">
+                                 <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                                     <ul>
+                                         <li>Recommended7i</li>
+                                         <li>Recommended for you.</li>
+                                 </ul>
+                          </a>
+                         </section> 
+                  </section>
+        </section>
+         <!-- Upnext Video Section -->
+
+
+        <!-- Video sections -->
+        <section class="thumbnails">
+            <section class="inner-left">
+                   <a href="#link-to-video-1"><img src="images/thumbnails/thmb-1.JPG" alt=""></a> 
+            </section>
+            <section class="inner-right ">
+                <a href="#link-to-video-1">
+                    <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                        <ul>
+                            <li>Recommended7i</li>
+                            <li>Recommended for you.</li>
+                    </ul>
+                    </a>
+            </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-2"><img src="images/thumbnails/thmb-2.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-2">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-3"><img src="images/thumbnails/thmb-3.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-3">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-4"><img src="images/thumbnails/thmb-4.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-4">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-5"><img src="images/thumbnails/thmb-5.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-5">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-6"><img src="images/thumbnails/thmb-6.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-6">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-7"><img src="images/thumbnails/thmb-7.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-7">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-8"><img src="images/thumbnails/thmb-8.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-8">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+         <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-9"><img src="images/thumbnails/thmb-9.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-9">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
+        <section class="thumbnails">
+                <section class="inner-left">
+                       <a href="#link-to-video-10"><img src="images/thumbnails/thmb-10.JPG" alt=""></a> 
+                </section>
+                <section class="inner-right ">
+                    <a href="#link-to-video-10">
+                        <strong>Tis is why Messi will never be better than C Ronaldo</strong>
+                            <ul>
+                                <li>Recommended7i</li>
+                                <li>Recommended for you.</li>
+                        </ul>
+                        </a>
+                </section> 
+        </section>
   </aside>
 
   </main>
