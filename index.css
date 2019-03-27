@@ -171,20 +171,31 @@ font-size:1vw; margin-bottom: 5px; }
 }
 
 .video-stats{
-  /* min-height: 40vh;
-  min-width: 40vw;
-  height: 60%;
-  width: 60%; */
+   /* min-height: 40vh;  */
+  /* min-width: 40vw; */
+  /* height: 60%; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-bottom:solid 1px #afacac;
   height: 40px;
 }
 .video-stats ul {
+  width: 18vw;
+  position: relative;
   list-style: none; 
   display: flex; 
   flex-direction: row; 
-  justify-content: space-between;
+  justify-content:space-evenly; 
+  align-items: center;
+}
+.video-stats ul i{
+  margin:0 7px;
+}
+.dot-dot{
+  font-size: 3em;
+  line-height: 0;
+  letter-spacing: -0.4em;
+  color: #909090;
 }
 .left-reviews{
   text-align: left;
