@@ -177,24 +177,50 @@ font-size:1vw; margin-bottom: 5px; }
   width: 60%; */
   display: flex;
   justify-content: space-around;
-  border-bottom:solid 1px;
-  border-top:solid 1px;
+  border-bottom:solid 1px #afacac;
+  height: 40px;
+}
+.video-stats ul {
+  list-style: none; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.left-reviews{
+  text-align: left;
 }
 
 .video-author{
   display: flex;
+  justify-content: space-between;
   border-bottom:solid 1px;
 }
 
 .video-comments{
-  border-bottom:solid 1px;
+  /* border-bottom:solid 1px; */
 }
 .video-comments .video-comments-form{
   display: flex;
   /* border:solid 1px; */
 }
-.video-comments textarea{
-  width: 100%;
+.video-comments #comments-by{
+  line-height: 40px;
+  width: 89vw;
   border-style: none;
-  border-bottom: solid 1px  #909090;;
+  border-bottom: solid 1px  #aca9a9;
 }
+#comments-by:active{
+  border-bottom: solid 1px  #363535;
+  border-style: none;
+}
+.author_avatar{
+  width: 40px; 
+  height: 40px; 
+  border-radius: 22px;
+ }
+ .video-comments-form{
+  width: auto; 
+  height: auto; 
+  /* border: solid 1px; */
+
+ }
