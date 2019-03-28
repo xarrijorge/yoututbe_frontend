@@ -1,0 +1,237 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body *{
+  margin: 0;
+  padding: 0;
+}
+.video-section{
+  min-height: 40vh;
+  min-width: 40vw;
+  height: 60%;
+  width: 60%;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.video-title{
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+  background: #fffdff;
+  box-shadow: 3px 0 4px #c9c9c9;
+}
+.fas, .fab{
+  font-size: 1em;
+  color: #606060;
+}
+.fas, .fab:hover{
+  cursor: pointer;
+}
+.fa-youtube{
+  color: #f00;
+  font-size: 1.4em;
+  margin: 0;
+}
+.left-action-buttons{
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin-left: 3%;
+}
+.left-action-buttons *:not(span){
+  margin: 0 10px;
+}
+.left-action-buttons span{
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 0;
+}
+.right-action-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+form{
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+.search-icon{
+  background: #f4f5f7;
+  color: #fff;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #909090;
+  border-left: 0;
+}
+.search-icon:hover{
+  background: #909090;
+  cursor: pointer;
+}
+input{
+  border: 1px solid #909090;
+  width: 80%;
+  padding: 0 2%;
+  font-size: 1em;
+}
+input:active{
+  box-shadow: inset(5px 5px 3px 3px blue);
+}
+input:hover{
+  cursor: text;
+}
+main{
+  display: flex;
+  margin: 2% 4%;
+  margin-top: 12vh;
+  width: 100vw;
+  height: 100vh;
+}
+aside{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 0 2%;
+}
+.thumbnails {
+  display:flex;
+  width:25vw;
+  min-height: 9%;
+  margin: 20px 0;
+  font-size: 0.85em;
+}
+.thumbnails img{
+  min-width: 100%;
+}
+.inner-left{
+  margin-right:5px;
+}
+.inner-right{
+  width: 100%;
+  color: #909090;
+  padding: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.inner-right ul {
+  list-style: none; 
+  color: rgba(155, 154, 154, 0.877);
+}
+.inner-right a { 
+  text-decoration: none; 
+  color: rgba(31, 30, 30, 0.877);
+}
+.sidebar-upnext {
+  min-height: 21%;
+  border-bottom: solid 1px rgb(235, 229, 229);
+  margin-bottom: 9px;
+  clear: both;
+}
+
+.autoplay { 
+  color: rgba(39, 38, 38, 0.877); 
+  font-size:1vw; 
+  margin-bottom: 5px; 
+}
+
+.autoplay ul {
+  list-style: none; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.video-stats{
+  display: flex;
+  justify-content: space-between;
+  border-bottom:solid 1px #afacac;
+  height: 40px;
+}
+.video-stats ul {
+  width: 18vw;
+  position: relative;
+  list-style: none; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content:space-evenly; 
+  align-items: center;
+}
+.video-stats ul i{
+  margin:0 7px;
+}
+.dot-dot{
+  font-size: 3em;
+  line-height: 0;
+  letter-spacing: -0.4em;
+  color: #909090;
+}
+.left-reviews{
+  text-align: left;
+}
+.comments-stats{
+  margin-bottom: 25px;
+}
+.video-comments .video-comments-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-comments #comments-by{
+  line-height: 40px;
+  width: 89vw;
+  border-style: none;
+  border-bottom: solid 1px  #aca9a9;
+}
+#comments-by:active{
+  border-bottom: solid 1px  #363535;
+  border-style: none;
+}
+.video-comments-form{
+  width: auto; 
+  height: auto; 
+}
+.subscribe button{
+  background: #FF0000;
+  border: none;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 2.5px;
+}
+.video-author{
+  display: flex;
+  padding: 3% 0;
+  justify-content: space-between;
+  border-bottom:solid 1px #909090;
+  margin-bottom: 30px;
+}
+
+.author_avatar{
+  width: 8%;
+}
+.author_avatar img{
+  width: 100%;
+  margin-top: -10px;
+}
+.author_name{
+  margin-right: auto;
+  margin-left: 16px;
+}
